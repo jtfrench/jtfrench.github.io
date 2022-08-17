@@ -1,7 +1,1 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Welcome to MonkeyInShoes.com</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+## Welcome to MonkeyInShoes.com
