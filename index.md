@@ -1,4 +1,4 @@
 ## About this site 
 
 ## Pages
-[Everything is Relative]({% /iCloud/monkeyinshoes/everythingisrelative.md %}).
+[Everything is Relative](/iCloud/monkeyinshoes/everythingisrelative.md).
