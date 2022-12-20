@@ -5,6 +5,6 @@ The best part of all is that to make this book truly agile, the content is all h
 
 ## Topics
 The current topics are (with more to be added in the future):
-[Everything is Relative](/iCloud/monkeyinshoes/everything is relative.md)
-[The Binary Bias](/iCloud/monkeyinshoes/the binary bias.md)
-[Product of your Enviornment](/iCloud/monkeyinshoes/product of your environment.md)
+* [Everything is Relative](/iCloud/monkeyinshoes/everything is relative.md)
+* [The Binary Bias](/iCloud/monkeyinshoes/the binary bias.md)
+* [Product of your Enviornment](/iCloud/monkeyinshoes/product of your environment.md)
