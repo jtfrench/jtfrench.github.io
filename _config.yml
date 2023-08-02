@@ -2,7 +2,7 @@
 name: "Monkey In Shoes"
 title: "Monkey In Shoes"
 description: "Understanding modern life through the lens of evolutionary psychology."
-logo: 'assets/images/mis.png'
+logo: 'assets/images/logo.png'
 favicon: 'assets/images/mis.png'
 baseurl: /mediumish-theme-jekyll
 google_analytics: 'UA-46278016-1'
