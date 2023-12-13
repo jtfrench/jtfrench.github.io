@@ -1,3 +1,13 @@
+---
+layout: post
+title:  "Why"
+author: Josh
+categories: [ ]
+image: 
+featured: true
+hidden: true
+---
+
 # 1. Why
 
 At the end of the day, this book is about the central question of: why? Why are we here? Why do we look this way? Why do I care about other people? Why am I even reading this book? Chances are, there was a time in your adolescent years where these questions first crossed your mind, but you never found the answers to them and none of the adults seemed all that bothered with them, and so you just kind of moved on. Besides, there was more real and tangible stuff going on like sports and movies and girlfriends/boyfriends and so you just kind of figured that they weren’t really that important. 
