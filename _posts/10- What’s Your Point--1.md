@@ -1,0 +1,7 @@
+# 10. What’s Your Point?
+
+As I said at the beginning of this book, none of this really matters. It doesn’t matter if you agree or disagree with what I am saying, if it changes your life or not. In the end, you will die, and your opinions on not only this book but everything else wont matter. Maybe you will pass some of those options onto your children (your Biological Project) but then surely after a few generations it too will get lost, or at most worked into some overall cultural view. 
+
+Point being that no immortality project is better then any other one, and if you buy into the idea of them at all doesn’t matter to me or anyone else. However I write this in hopes that the book will provide a framework for you to both live your life (pursue your projects) and more importantly, sympathize/understand people who have projects different from yours. Keyword being different; not better, not worse, just different. It’s likely that their primary project(s) are one of your minority projects, and so hopefully you can perform a mental experiment where you expand your feelings on that project and understand where they are coming from. 
+
+The immortality project framework is nothing more than a tool in order to help you understand yourself and other better. It’s not a call to action for a cultural movement or a precursor to a cult, it’s simply a way of understanding the world and your place in it. 

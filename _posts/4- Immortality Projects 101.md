@@ -1,0 +1,8 @@
+# 4. Immortality Projects 101
+
+Ive never been a fan of absolute statements about life like “The four paths to englightment” or “the Ten Commandments”. The idea that something as complicated as achieving enlightmentment or understanding how to act could be distilled down into a finite set of exact statements is ridiculous. Unfortunately, as we explored in the previous chapter, we humans like finite things. We like pattern and structure and if you dont think about it too hard you can sometimes take comfort in these sort of simplistic exact statements about the world. 
+
+The reason I try to make this point is because I would like to use one of these such numerically absolute statements, but with the caveat that I recognize from the outset that it is not a complete or exact list by any means. Think of it as a way of organizing an idea in your head but when a “yah but what about…” though comes into your head just know that I understand, and you are not wrong, and yes we probably missed something, and maybe its a combination of two or more of the items on this list, but no need to worry because we recognize its flawed - its just a place to start. 
+
+Okay here we go. So you want to live forever right? Well you probably weren’t conscious of this fact before, but its the truth, and I’m here to tell you can do exactly that. Don’t worry this isn’t a cult or budget-rate cryogenics, this is simply a framework for helping you understand all the various ways you can live beyond your mortal self. Please note I did not come up with this list on my own, the credit goes to Robert Jay Lifton in his book The Broken Connection. The five methods of immortality are as follows: 
+
