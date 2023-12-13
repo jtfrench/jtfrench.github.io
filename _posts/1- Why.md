@@ -3,9 +3,9 @@ layout: post
 title:  "Why"
 author: Josh
 categories: [ ]
-image: 
+image: assets/images/12.jpg
 featured: true
-hidden: true
+hidden: false
 ---
 
 # 1. Why
