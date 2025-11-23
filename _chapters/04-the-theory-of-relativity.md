@@ -88,4 +88,4 @@ Now that we have a model to understand an *individual's* experience over time, t
 
 ---
 
-Next: [The Immortal Replicator](/the-immortal-replicator/) · Previous: [Nuance](/nuance/)
+Next: [The Immortal Replicator](/05-the-immortal-replicator/) · Previous: [Nuance](/03-nuance/)

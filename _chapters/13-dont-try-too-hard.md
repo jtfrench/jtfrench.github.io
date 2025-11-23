@@ -74,4 +74,4 @@ You should do the things you want but with the understanding that when something
 
 ---
 
-Previous: [Experiential Transcendence](/experiential-transcendence/)
+Previous: [Experiential Transcendence](/12-experiential-transcendence/)

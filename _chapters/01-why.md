@@ -39,4 +39,4 @@ If you ask the question of "Why?", again and again, all answers eventually boil 
 
 ---
 
-Next: [The Beauty in Understanding](/the-beauty-in-understanding/)
+Next: [The Beauty in Understanding](/02-the-beauty-in-understanding/)

@@ -11,8 +11,8 @@ The Creative Project is the shift away from the individuality of the Status Proj
 
 Art, like love, is very hard to define. We have a tendency to call many things art. It wouldn't be unheard of to say things like "there is an art to socializing" or "that athlete is an artist". For the purposes of this discussion, we will define art in what I believe to be its broadest sense: the crafting of something new. While we may struggle to define what art is, we know what it is not. Art is not consistency, duplication, or standardization. Sure, good artists may be consistent, but they are consistent at *being* an artist, not making *consistent art*. Once something has been discovered, a book or painting has been crafted, or an athletic manure has been made, then we no longer consider it art.
 
-This broader definition of art as a source of novelty is that which fuels the creative project. Similarly to [The Biological Project](/the-biological-project/) where children are the creation of something new that lives beyond oneself, so too does art serve the same purpose for The Creative Project.
+This broader definition of art as a source of novelty is that which fuels the creative project. Similarly to [The Biological Project](/07-the-biological-project/) where children are the creation of something new that lives beyond oneself, so too does art serve the same purpose for The Creative Project.
 
 ---
 
-Next: [The Community Project](/the-community-project/) · Previous: [The Status Project](/the-status-project/)
+Next: [The Community Project](/10-the-community-project/) · Previous: [The Status Project](/08-the-status-project/)

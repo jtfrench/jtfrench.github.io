@@ -47,4 +47,4 @@ We are just self-replicating chemical concoctions - nothing more, nothing less. 
 
 ---
 
-Next: [Immortality Projects 101](/immortality-projects-101/) · Previous: [The Theory of Relativity](/the-theory-of-relativity/)
+Next: [Immortality Projects 101](/06-immortality-projects-101/) · Previous: [The Theory of Relativity](/04-the-theory-of-relativity/)

@@ -20,4 +20,4 @@ I believe the same is true for human motivation. The magic doesn't exist, but th
 
 ---
 
-Next: [Nuance](/nuance/) · Previous: [Why](/why/)
+Next: [Nuance](/03-nuance/) · Previous: [Why](/01-why/)

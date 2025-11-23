@@ -7,16 +7,16 @@ chapter: 12
 > *"The fifth mode of symbolized immortality, that of experiential transcendence, is of a different order from the others. It depends entirely on a psychic state - one so intense and all-encompassing that time and death disappear."*
 > *- Robert Jay Lifton, The Broken Connection*
 
-What does it feel like to live forever? Well odds are you've experienced it at some point in your life, probably for just a fleeting moment - but it is these moment that drive us to keep working on our projects. In the case of [The Biological Project](/the-biological-project/), the most common instance of Experiential Transcendence is the birth of a child. Many parents say that moment, witnessing the birth of their child, is one of the most transformative experiences they have ever had. This is because in that moment you gain a glimpse into immortality. That child represents, both literally and figuratively, an extension of one's self. That's how it feels to live forever, baby.
+What does it feel like to live forever? Well odds are you've experienced it at some point in your life, probably for just a fleeting moment - but it is these moment that drive us to keep working on our projects. In the case of [The Biological Project](/07-the-biological-project/), the most common instance of Experiential Transcendence is the birth of a child. Many parents say that moment, witnessing the birth of their child, is one of the most transformative experiences they have ever had. This is because in that moment you gain a glimpse into immortality. That child represents, both literally and figuratively, an extension of one's self. That's how it feels to live forever, baby.
 
-The birth of a child is typically the most compelling instance of Experiental Transcendence one will experience, and that is because (as we have said before), [The Biological Project](/the-biological-project/) is the original project. All other Immortality Projects are branches off the biological tree. This is why it is the most common and compelling of all the projects.
+The birth of a child is typically the most compelling instance of Experiental Transcendence one will experience, and that is because (as we have said before), [The Biological Project](/07-the-biological-project/) is the original project. All other Immortality Projects are branches off the biological tree. This is why it is the most common and compelling of all the projects.
 
 That being said, it is still possible to experience Experiental Transcendence in the pursuit of other projects. Some examples would be:
 
-- **[The Status Project](/the-status-project/):** soaking up the applause in the moment after a presentation/speech; seeing one's name on a building, trophy, article, etc.
-- **[The Creative Project](/the-creative-project/):** "losing oneself" in visual art; in music; or while playing a sport with a degree of creative skill
-- **[The Community Project](/the-community-project/):** the feeling of unity when the crowd is cheering after a big win/goal; moments of group prayer
-- **[The Natural Project](/the-natural-project/):** watching a sunrise/sunset over a scenic landscape; looking up at old growth trees
+- **[The Status Project](/08-the-status-project/):** soaking up the applause in the moment after a presentation/speech; seeing one's name on a building, trophy, article, etc.
+- **[The Creative Project](/09-the-creative-project/):** "losing oneself" in visual art; in music; or while playing a sport with a degree of creative skill
+- **[The Community Project](/10-the-community-project/):** the feeling of unity when the crowd is cheering after a big win/goal; moments of group prayer
+- **[The Natural Project](/11-the-natural-project/):** watching a sunrise/sunset over a scenic landscape; looking up at old growth trees
 
 Notice how, when you think about it, these types of moments are the reason many would say they enjoy each of the various activities. That is because they represent the pinnacle of their respective Immortality Projects. Once again, it is in these moments that we glimpse immortality.
 
@@ -26,4 +26,4 @@ Not good, not bad, not better, not worse - just is.
 
 ---
 
-Next: [Don't Try Too Hard](/dont-try-too-hard/) · Previous: [The Natural Project](/the-natural-project/)
+Next: [Don't Try Too Hard](/13-dont-try-too-hard/) · Previous: [The Natural Project](/11-the-natural-project/)

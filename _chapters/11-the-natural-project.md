@@ -8,4 +8,4 @@ chapter: 11
 
 ---
 
-Next: [Experiential Transcendence](/experiential-transcendence/) · Previous: [The Community Project](/the-community-project/)
+Next: [Experiential Transcendence](/12-experiential-transcendence/) · Previous: [The Community Project](/10-the-community-project/)

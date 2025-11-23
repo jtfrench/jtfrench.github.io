@@ -20,7 +20,7 @@ There are many ways to live forever and it's best to think of these pursuits as 
 - **The Community Project:** Effectively achieving immortality through association with a group, whether it be a religion, nation, sports team, political ideology, etc.
 - **The Natural Project:** Reconciling one's own immortality through a connection with nature, resulting a belief of being part of one large "life force".
 
-Now, before we get any further, I have to make a point that I will continue hammering home: **No one project is any better or worse then the other - they are all equal.** If you've understood [The Immortal Replicator](/the-immortal-replicator/), then you'll remember that life truly has no meaning, but that we should still make the most of it. The order of the projects above is of no relevance, it is not a ranking. The projects do however tend to have a relationship to their adjacent counterparts, which means the best way to represent them is probably more like a circular diagram.
+Now, before we get any further, I have to make a point that I will continue hammering home: **No one project is any better or worse then the other - they are all equal.** If you've understood [The Immortal Replicator](/05-the-immortal-replicator/), then you'll remember that life truly has no meaning, but that we should still make the most of it. The order of the projects above is of no relevance, it is not a ranking. The projects do however tend to have a relationship to their adjacent counterparts, which means the best way to represent them is probably more like a circular diagram.
 
 ![Immortality projects circle](/assets/images/Image 7.jpg)
 
@@ -46,4 +46,4 @@ Every child has different experiences and therefor their pie charts may look vas
 
 ---
 
-Next: [The Biological Project](/the-biological-project/) · Previous: [The Immortal Replicator](/the-immortal-replicator/)
+Next: [The Biological Project](/07-the-biological-project/) · Previous: [The Immortal Replicator](/05-the-immortal-replicator/)

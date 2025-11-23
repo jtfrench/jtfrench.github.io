@@ -77,4 +77,4 @@ Gradient Analysis truly is the key concept for the remainder of this book. When 
 
 ---
 
-Next: [The Theory of Relativity](/the-theory-of-relativity/) · Previous: [The Beauty in Understanding](/the-beauty-in-understanding/)
+Next: [The Theory of Relativity](/04-the-theory-of-relativity/) · Previous: [The Beauty in Understanding](/02-the-beauty-in-understanding/)

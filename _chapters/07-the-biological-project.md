@@ -17,4 +17,4 @@ In the case of the Biological Project, in a few short generations you will be go
 
 ---
 
-Next: [The Status Project](/the-status-project/) · Previous: [Immortality Projects 101](/immortality-projects-101/)
+Next: [The Status Project](/08-the-status-project/) · Previous: [Immortality Projects 101](/06-immortality-projects-101/)
