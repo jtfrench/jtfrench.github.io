@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: chapter
 title: "The Theory of Relativity"
-date: 2024-01-04
 chapter: 4
 ---
 

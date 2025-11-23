@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: chapter
 title: "Why"
-date: 2024-01-01
 chapter: 1
 ---
 

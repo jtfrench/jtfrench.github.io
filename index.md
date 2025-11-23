@@ -10,11 +10,11 @@ title: Home
 
 ## Table of Contents
 
-{% assign sorted_posts = site.posts | sort: 'chapter' %}
+{% assign sorted_chapters = site.chapters | sort: 'chapter' %}
 <ol class="toc-list">
-{% for post in sorted_posts %}
+{% for chapter in sorted_chapters %}
   <li class="toc-item">
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <a href="{{ chapter.url | relative_url }}">{{ chapter.title }}</a>
   </li>
 {% endfor %}
 </ol>

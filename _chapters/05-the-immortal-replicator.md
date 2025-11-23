@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: chapter
 title: "The Immortal Replicator"
-date: 2024-01-05
 chapter: 5
 ---
 

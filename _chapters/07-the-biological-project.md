@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: chapter
 title: "The Biological Project"
-date: 2024-01-07
 chapter: 7
 ---
 

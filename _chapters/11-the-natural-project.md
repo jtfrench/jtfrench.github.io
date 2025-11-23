@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: chapter
 title: "The Natural Project"
-date: 2024-01-11
 chapter: 11
 ---
 

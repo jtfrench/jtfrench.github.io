@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: chapter
 title: "Nuance"
-date: 2024-01-03
 chapter: 3
 ---
 

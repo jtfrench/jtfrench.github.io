@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: chapter
 title: "The Creative Project"
-date: 2024-01-09
 chapter: 9
 ---
 

@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: chapter
 title: "Immortality Projects 101"
-date: 2024-01-06
 chapter: 6
 ---
 

@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: chapter
 title: "Don't Try Too Hard"
-date: 2024-01-13
 chapter: 13
 ---
 

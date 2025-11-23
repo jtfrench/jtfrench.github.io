@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: chapter
 title: "Experiential Transcendence"
-date: 2024-01-12
 chapter: 12
 ---
 

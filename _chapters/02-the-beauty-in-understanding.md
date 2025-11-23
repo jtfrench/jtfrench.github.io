@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: chapter
 title: "The Beauty in Understanding"
-date: 2024-01-02
 chapter: 2
 ---
 

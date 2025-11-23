@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: chapter
 title: "The Community Project"
-date: 2024-01-10
 chapter: 10
 ---
 

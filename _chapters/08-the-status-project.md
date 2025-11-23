@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: chapter
 title: "The Status Project"
-date: 2024-01-08
 chapter: 8
 ---
 
