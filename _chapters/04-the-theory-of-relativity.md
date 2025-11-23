@@ -4,13 +4,13 @@ title: "The Theory of Relativity"
 chapter: 4
 ---
 
-> *We divide the world to stop us feeling frightened*
-> *Into wrong and into right and*
-> *Into black and into white and*
-> *Into real men and fairies*
-> *Into status quo and scary*
-> *Yeah we want the world binary, binary*
-> *But it's not that simple*
+> *We divide the world to stop us feeling frightened*<br>
+> *Into wrong and into right and*<br>
+> *Into black and into white and*<br>
+> *Into real men and fairies*<br>
+> *Into status quo and scary*<br>
+> *Yeah we want the world binary, binary*<br>
+> *But it's not that simple*<br>
 > *- [Tim Minchin, The Fence](https://www.youtube.com/watch?v=ylWkW8BqLfY)*
 
 In 1905/1915, Einstein shocked the world with his newly formulated "Theory of Relativity". Don't worry, you don't have to be a physicist to understand the fundamental idea here. Now that you have an understanding of Gradient Analysis (from [Nuance](/nuance/)) you'll quickly see that his theory was really just a more mathematical version of Gradient Analysis. Basically what he proposed was that time, something that appears so fixed to us, was in-fact relative (surprise! another gradient!). It showed that if you sent someone out into space and they moved really really fast for a while and then returned to earth, they would have actually *experienced less time* then had passed here on earth. Crazy right?

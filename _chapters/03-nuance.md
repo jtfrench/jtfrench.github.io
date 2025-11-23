@@ -9,7 +9,7 @@ chapter: 3
 **nuance**
 /ˈno͞oˌäns/
 *noun*
-1. a subtle difference in or shade of meaning, expression, or sound.
+   1. a subtle difference in or shade of meaning, expression, or sound.
 
 That right there is a definition. By explicitly stating it, I am attempting to ensure that you and I are on the same page as to what that word means. I'm removing the nuance from nuance, if you will. It's a worthwhile practice, but not one that we need or should do all the time - mostly because it would be impossible to effectively communicate anything of value. The thing about definitions is that they are made up of words which in and of themselves have definitions. It's similar to the Wikipedia example from [Why](/why/), but different in that it doesn't converge down so a single word. There is no one word that serves as the starting point for all other words. That's the funny thing about words; at some point you just have to kind of "get it".
 
