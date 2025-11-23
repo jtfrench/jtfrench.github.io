@@ -4,26 +4,19 @@ title: Home
 ---
 
 <div class="home-header">
-  <h1 class="home-title">{{ site.title }}</h1>
-  <p class="home-description">{{ site.description }}</p>
+  <h1 class="home-title">Monkeys In Shoes</h1>
+  <p class="home-description">A detailed and interactive analysis of the human condition.</p>
 </div>
 
-{% if site.posts.size > 0 %}
-<ul class="post-list">
-  {% for post in site.posts %}
-  <li class="post-list-item">
-    <h2 class="post-list-title">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </h2>
-    <p class="post-list-meta">
-      {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-    {% if post.excerpt %}
-    <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-    {% endif %}
+## Table of Contents
+
+{% assign sorted_posts = site.posts | sort: 'chapter' %}
+<ol class="toc-list">
+{% for post in sorted_posts %}
+  <li class="toc-item">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
   </li>
-  {% endfor %}
-</ul>
-{% else %}
-<p>No posts yet.</p>
-{% endif %}
+{% endfor %}
+</ol>
+
+<p style="margin-top: 2rem;"><a href="/about/">About this project</a></p>
