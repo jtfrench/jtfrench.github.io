@@ -1,5 +1,7 @@
-title: (we're just fu*king) Monkeys In Shoes
-description: A detailed and interactive analysis of the human condition. 
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-cayman
+title: jtfrench
+description: A personal blog
+url: https://monkeyinshoes.com
+permalink: /:title/
+
+markdown: kramdown
+highlighter: rouge
