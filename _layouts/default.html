@@ -7,8 +7,35 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-title">Chapters</span>
+      <button class="sidebar-close" id="sidebar-close" aria-label="Close sidebar">&times;</button>
+    </div>
+    <nav class="sidebar-nav">
+      {% assign sorted_chapters = site.chapters | sort: 'chapter' %}
+      <ol class="sidebar-chapters">
+        {% for chapter in sorted_chapters %}
+        <li class="sidebar-chapter {% if page.url == chapter.url %}active{% endif %}">
+          <a href="{{ chapter.url | relative_url }}">{{ chapter.title }}</a>
+        </li>
+        {% endfor %}
+      </ol>
+      <div class="sidebar-links">
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </div>
+    </nav>
+  </aside>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
   <header class="site-header">
     <nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open chapter menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
     </nav>
   </header>
@@ -20,5 +47,32 @@
   <footer class="site-footer">
     <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
   </footer>
+
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebarClose = document.getElementById('sidebar-close');
+
+    function openSidebar() {
+      sidebar.classList.add('open');
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeSidebar() {
+      sidebar.classList.remove('open');
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    menuToggle.addEventListener('click', openSidebar);
+    sidebarClose.addEventListener('click', closeSidebar);
+    overlay.addEventListener('click', closeSidebar);
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeSidebar();
+    });
+  </script>
 </body>
 </html>
