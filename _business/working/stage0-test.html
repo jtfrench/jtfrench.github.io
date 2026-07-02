@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Reading Experiment — Monkeys in Shoes</title>
+<style>
+  :root{
+    --bg:#faf9f7; --ink:#1c1b19; --muted:#6b6862; --line:#e4e1db;
+    --accent:#2f6f5e; --card:#ffffff; --soft:#f1efea;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:18px/1.65 Georgia,'Iowan Old Style',serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:680px; margin:0 auto; padding:40px 22px 90px}
+  h1{font-size:30px; line-height:1.25; margin:0 0 8px}
+  h2{font-size:23px; margin:34px 0 6px}
+  .sub{color:var(--muted); font-style:italic; margin:0 0 28px}
+  .step{display:none}
+  .step.active{display:block; animation:fade .4s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .q{margin:0 0 26px; padding-bottom:22px; border-bottom:1px solid var(--line)}
+  .q:last-of-type{border-bottom:none}
+  .q p{margin:0 0 12px; font-weight:bold}
+  .scale{display:flex; gap:6px; flex-wrap:wrap}
+  .scale label{
+    flex:1; min-width:96px; text-align:center; cursor:pointer;
+    border:1px solid var(--line); border-radius:9px; padding:9px 6px;
+    font-size:14px; font-family:system-ui,sans-serif; color:var(--muted);
+    background:var(--card); transition:.15s;
+  }
+  .scale input{display:none}
+  .scale label:hover{border-color:var(--accent)}
+  .scale input:checked + span{}
+  .scale label.sel{background:var(--accent); color:#fff; border-color:var(--accent)}
+  .opt{
+    display:block; cursor:pointer; border:1px solid var(--line);
+    border-radius:11px; padding:14px 16px; margin:0 0 10px; background:var(--card);
+    transition:.15s; font-size:17px;
+  }
+  .opt:hover{border-color:var(--accent)}
+  .opt.sel{border-color:var(--accent); background:var(--soft)}
+  button{
+    font:600 16px system-ui,sans-serif; cursor:pointer; color:#fff;
+    background:var(--accent); border:none; border-radius:10px;
+    padding:13px 26px; margin-top:8px;
+  }
+  button:disabled{opacity:.4; cursor:not-allowed}
+  button.ghost{background:transparent; color:var(--accent); border:1px solid var(--accent)}
+  .passage{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:26px 26px 10px; margin:14px 0 8px;
+  }
+  .passage h3{margin:0 0 4px; font-size:14px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); font-family:system-ui,sans-serif}
+  .passage .body p{margin:0 0 16px}
+  .note{font-size:14px; color:var(--muted); font-family:system-ui,sans-serif}
+  .pill{display:inline-block; background:var(--soft); border-radius:20px; padding:3px 12px;
+    font:600 13px system-ui,sans-serif; color:var(--accent); margin-bottom:14px}
+  .progress{height:4px; background:var(--line); border-radius:4px; margin-bottom:30px; overflow:hidden}
+  .progress > i{display:block; height:100%; width:0; background:var(--accent); transition:width .4s}
+  textarea{width:100%; font:16px/1.5 Georgia,serif; padding:12px; border:1px solid var(--line);
+    border-radius:10px; resize:vertical; min-height:80px; background:var(--card)}
+  .done-box{background:var(--soft); border-radius:14px; padding:24px; text-align:center}
+  em.k{font-style:italic}
+  .row{display:flex; gap:10px; flex-wrap:wrap; margin-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="progress"><i id="bar"></i></div>
+
+  <!-- STEP 0: INTRO -->
+  <section class="step active" id="s0">
+    <h1>A small reading experiment</h1>
+    <p class="sub">Five quick questions, two short passages, a few reactions. About six minutes.</p>
+    <p>You'll answer a handful of questions, then read two short passages that explain the same idea in different ways. There are no right answers and nothing is being graded — I'm trying to learn which way of explaining things actually lands for different people.</p>
+    <p>Please be honest, even (especially) if your honest reaction is "meh." Polite answers aren't useful to me.</p>
+    <button onclick="go(1)">Begin</button>
+  </section>
+
+  <!-- STEP 1: DELIVERY AXIS -->
+  <section class="step" id="s1">
+    <h2>First, a little about how you like to think</h2>
+    <p class="sub">No right answers.</p>
+    <div class="q" data-q="q1">
+      <p>I'd rather wrestle with a complex idea than be handed a simple takeaway.</p>
+      <div class="scale" data-name="q1"></div>
+    </div>
+    <div class="q" data-q="q2">
+      <p>I prefer to just be told the point rather than think it all the way through myself.</p>
+      <div class="scale" data-name="q2"></div>
+    </div>
+    <div class="q" data-q="q3">
+      <p>When I read a good story or watch a film, I lose track of the world around me and get pulled right in.</p>
+      <div class="scale" data-name="q3"></div>
+    </div>
+    <button id="b1" disabled onclick="go(2)">Next</button>
+  </section>
+
+  <!-- STEP 2: PROJECT AXIS -->
+  <section class="step" id="s2">
+    <h2>And what drives you most</h2>
+    <p class="sub">Pick the closest, even if none is perfect.</p>
+    <div id="proj"></div>
+    <button id="b2" disabled onclick="serve()">Next</button>
+  </section>
+
+  <!-- STEP 3: READING -->
+  <section class="step" id="s3">
+    <h2>Two passages</h2>
+    <p class="sub">Same idea, explained two ways. Read both, then scroll down.</p>
+    <div id="passages"></div>
+
+    <h2>Your reactions</h2>
+    <div class="q">
+      <p>Which passage landed better for you?</p>
+      <div id="pref"></div>
+    </div>
+    <div class="q">
+      <p>How much did your preferred passage click? (1 = not at all, 5 = really landed)</p>
+      <div class="scale" data-name="intensity"></div>
+    </div>
+    <div class="q">
+      <p>Could you tell that one of these was written for someone like you?</p>
+      <div id="tell"></div>
+    </div>
+    <div class="q">
+      <p>Would you pay for a whole book that read like your preferred passage?</p>
+      <div id="pay"></div>
+    </div>
+    <div class="q">
+      <p>Anything you want to add? (optional — what worked, what didn't)</p>
+      <textarea id="freetext" placeholder="Optional"></textarea>
+    </div>
+    <button id="b3" disabled onclick="finish()">Finish</button>
+  </section>
+
+  <!-- STEP 4: DONE -->
+  <section class="step" id="s4">
+    <div class="done-box">
+      <h2 style="margin-top:0">Thank you — that's genuinely helpful.</h2>
+      <p class="note">Your responses are saved on this page. If you're testing this yourself, use the buttons below.</p>
+      <div class="row" style="justify-content:center">
+        <button onclick="exportCSV()">Download my response (CSV)</button>
+        <button class="ghost" onclick="location.reload()">Start over</button>
+      </div>
+      <p class="note" id="adminhint" style="margin-top:20px"></p>
+    </div>
+  </section>
+
+</div>
+
+<script>
+/* ---------- CONTENT ---------- */
+const SCALE = ["Strongly disagree","Disagree","Neutral","Agree","Strongly agree"];
+
+const PROJECTS = [
+  {key:"Biological", text:"What matters most to me is the people I love — family, raising kids, the people who'll carry on after me."},
+  {key:"Status",     text:"I want to make a mark — to do something that outlasts me and that people remember."},
+  {key:"Creative",   text:"I'm happiest making things — art, music, writing, building — the act itself is the point."},
+  {key:"Community",  text:"I feel most myself as part of something bigger — a team, a faith, a place, a cause."},
+  {key:"Natural",    text:"I feel most connected when I'm part of nature — the cosmos, the wilderness, the bigger whole."}
+];
+
+/* The two hand-written variations + the generic control.
+   Kept verbatim from working/stage0-gradient-variations.md and _chapters/03-nuance.md */
+const VARIATIONS = {
+  analytical: {
+    label:"A",
+    body:`<p>Here's a claim, and I'll spend the rest of this defending it: <b>the categories you use to measure your own significance are not real lines. They're conventions, and you can find the seams.</b></p>
+<p>Start with an adjective everyone in the status game cares about: <em>important</em>. We talk as if importance were a property a person either has or lacks — important people, unimportant people, a velvet rope between them. But point to the exact threshold. The senator is important and the staffer isn't? Then what about the chief of staff who writes the senator's words? The donor who funds the seat? Importance isn't a binary you cross; it's a gradient you sit somewhere on, and the rope is painted on by whoever's holding the guest list.</p>
+<p>This is true of every relative word, because that's what adjectives <em>are</em> — relative. Your private definition of "important" is a spectrum, with the most important thing you can imagine at one end and the least at the other, assembled entirely from your own experiences. When I say the word, you reflexively map it onto <em>your</em> scale, and your scale isn't mine. Two people read the same résumé and one sees an impressive career, the other sees a footnote. Neither is wrong. There's no master ruler.</p>
+<p>Fine, you might say — adjectives are slippery, but the nouns are solid. A "legacy" is a legacy. Here's the sharper point: the nouns dissolve too, if you push.</p>
+<p>Take the most status-laden noun there is: <em>great</em>. As in, a "great" person, a name carved in stone. We hand out the label as if greatness were a species you either belong to or don't. But greatness, like every category, is a line drawn across a continuum for the convenience of talking. There's no nucleotide of achievement where "accomplished" instantaneously becomes "great." Oppenheimer is remembered; the equally brilliant physicist one desk over isn't — not because reality sorted them into two kinds, but because we drew a line and put a name on one side of it. The line is <em>language</em>, not nature.</p>
+<p>I call this <b>Gradient Analysis</b>, and if you take one thing from this book, take this: the categories we use to keep score — important, great, remembered, forgotten — are labels someone drew on a spectrum that has no actual breaks in it. Not good, not bad. Just imprecise.</p>
+<p>Which doesn't make the status game fake or stupid. It makes it <em>arbitrary at the boundaries</em> — and once you see the lines are drawn, you get to ask who's drawing them, and why you agreed to be measured by them. Do you get my point?</p>`
+  },
+  narrative: {
+    label:"B",
+    body:`<p>You're in front of a blank canvas, or a guitar, or a cursor blinking on an empty page. And somewhere in your head sits the word <em>good</em>. Is this any good? Will it be good when it's done?</p>
+<p>Sit with that word for a second, because it's a trap — and not the kind you think.</p>
+<p>Try to point to the exact moment a song becomes <em>good</em>. Not the moment you <em>decide</em> it is — the actual line where not-good ends and good begins. You can't find it, because it isn't there. "Good" is a spectrum, with the worst thing you've ever made at one end and the best at the other, and the whole scale is built out of everything you've ever heard or seen. When you call something good, you're quietly sliding it onto <em>your</em> ruler — and the person next to you has a different ruler entirely. That's why two people hear the same track and one calls it a masterpiece and the other shrugs. Nobody's lying. There's just no shared mark on the wall.</p>
+<p>This is how <em>every</em> describing-word works. "Raw," "polished," "derivative," "fresh" — every one of them is a gradient wearing the costume of a fact.</p>
+<p>But here's the part that gets fun. You'd think at least the <em>nouns</em> are solid. A song is a song; jazz is jazz. Except — where exactly does the blues end and jazz begin? Play me the precise chord where one becomes the other. You can't, and not because you don't know music. It's because the genres were never two boxes. They're one long smear of people borrowing from each other, and somebody, somewhere, drew a line across the smear and printed a name on each side so we'd have something to put on the record sleeve.</p>
+<p>That line is the whole secret. It's not in the music. It's in the <em>language we wrapped around</em> the music.</p>
+<p>I call this <b>Gradient Analysis</b>, and if you take one thing from this book, let it be this: the world doesn't come in categories. It comes as one continuous blur — sound bleeding into sound, color into color, you-at-five into you-now — and we paint lines across it so we can talk. The lines are real conversations. They're just not real <em>edges</em>.</p>
+<p>Which is oddly freeing when you're staring at that blank canvas. The "good/not good" line you're so afraid of? You drew it. So did everyone else, somewhere slightly different. Not good, not bad — just one more line on a thing that never had any. Do you get my point?</p>`
+  },
+  community: {
+    label:"C",
+    body:`<p>You're in the stands when the goal goes in, and for about four seconds you are not a separate person anymore. You're a roar. Thousands of strangers and you are all one thing, and nobody had to explain the rules of the feeling to you — you just <em>belonged</em>, completely, to a thing with a name on it.</p>
+<p>Hold onto that feeling, because the name is doing something sneaky.</p>
+<p>Try to point to the edge of "us." The fans in your section, obviously. The ones across the stadium in the same colors, sure. The guy who only watches the finals — is he one of us? The kid who likes the rival team but cheers your striker? The city that's never been to a game but cries when the team wins? "Us" feels like a wall with insiders and outsiders, but walk toward the wall and you'll never actually reach it. It's a gradient — closeness shading off in every direction — and somebody painted a line across it and called everything on one side "us."</p>
+<p>This is how every belonging-word works. "Real" fan, "true" believer, "one of us," "outsider" — every one of them is a spectrum dressed up as a gate.</p>
+<p>You'd think the <em>nouns</em> would hold, though. A nation is a nation. A faith is a faith. But where exactly does your country begin? At the border line on the map — a line some people drew, that moved three times last century? Is someone "really" part of the faith at baptism, or belief, or birth, or the moment they first feel it in a packed room? Point to the convert's exact heartbeat where "them" became "us." You can't, because the group was never a box. It's a warmth that fades gradually outward, and we drew a line across the warmth so we'd know who to set a place for.</p>
+<p>That line is the whole secret. It's not in the belonging. It's in the <em>word we wrapped around</em> the belonging.</p>
+<p>I call this <b>Gradient Analysis</b>, and if you take one thing from this book, let it be this: the groups we'd die for — our people, our team, our faith, our kind — are real feelings drawn around a crowd that has no actual edge. The line is a story we tell so we can gather. Not good, not bad — just a circle drawn on something that fades.</p>
+<p>Which doesn't make belonging fake. It makes the wall <em>chosen</em> — and once you see someone drew it, you get to notice you're standing inside a circle, and wonder who got left just outside it. Do you get my point?</p>`
+  },
+  biological: {
+    label:"D",
+    body:`<p>You're holding a newborn — yours, or your sister's, doesn't matter — and someone says "she has her grandfather's nose." And everyone nods, because she does. But she also has a nose that is entirely, only hers. Both things are true, and the gap between them is the whole idea I want to show you.</p>
+<p>Start with a word every parent uses a hundred times a day: <em>big</em>. "You're getting so big." Point to the day a baby became big. There isn't one — there was just a continuous, invisible swelling, and one morning the old clothes didn't fit and you reached for the word. "Big" is a spectrum running from the smallest thing you can picture to the largest, built entirely out of your own life, and the person next to you has built a different one. That's why your "she's gotten so big" and the doctor's "she's on the small side" are both correct. There's no master ruler. There's just your ruler and theirs.</p>
+<p>That's every describing-word. "Healthy," "grown up," "old," "ready" — each one a gradient we say like it's a fact.</p>
+<p>But surely the <em>nouns</em> are solid? A parent is a parent; a child is a child. Here's the thing — where exactly does "child" end and "adult" begin? At 18, a line a government drew? At the first job, the first heartbreak, the day they stop needing you, the day you stop being able to fix it? You've watched it happen and you still can't name the morning it turned over. And go further back: your child came from you, who came from your mother, who came from hers, in an unbroken chain with no clean breaks anywhere in it — just one long handing-down where nobody can point to the link where one generation "became" the next.</p>
+<p>That line is the whole secret. It's not in the child. It's in the <em>word we wrapped around</em> the growing.</p>
+<p>I call this <b>Gradient Analysis</b>, and if you take one thing from this book, let it be this: the categories we love people through — baby, child, grown, old; mine, family, stranger — are real and tender lines drawn across a thing that never stops flowing. The flowing is the truth. The lines are how we hold on.</p>
+<p>Which doesn't make any of it less precious. It makes it <em>continuous</em> — your grandfather's nose really is on that newborn's face, because there was never a clean edge between them in the first place. Not good, not bad — just one long line of people, with the marks we drew to tell them apart. Do you get my point?</p>`
+  },
+  natural: {
+    label:"E",
+    body:`<p>Here's a claim worth sitting with: <b>almost every boundary you think you see in the natural world is a convenience of language laid over something perfectly continuous.</b> Once you see it in one place, you see it everywhere.</p>
+<p>Start with an adjective you'd use on a hike: <em>high</em>. The treeline is "high up." But point to the altitude where "low" becomes "high." There isn't one — elevation is a smooth number with no kink in it, and "high" is just the stretch of that number your body and your memories have agreed to flag. Your "high" and a Sherpa's "high" are different stretches of the same continuous scale. Neither is wrong. There's no altitude at which the mountain itself switches from low to high; there's only the word we lay across it.</p>
+<p>Every relative word works this way. "Vast," "ancient," "wild," "remote" — each is a gradient we speak as though it were a property of the thing.</p>
+<p>You'd expect the <em>nouns</em> to be firmer. A mountain is a mountain; a river is a river. But where exactly does the mountain begin — at which contour line does "foothill" become "mountain"? Where does the river end and the sea start, in that miles-wide blur of brackish water? Where's the precise edge of "the forest"? These aren't gaps in your knowledge; the edges genuinely aren't there. Zoom out further and it's the same all the way up: the boundary between your body and the air is a probabilistic haze of atoms; the edge of the solar system is a definitional argument; even "alive" versus "not alive" is a continuum a virus sits cheerfully in the middle of. Point to the exact molecule where chemistry became biology. You can't. Nobody can.</p>
+<p>That's the whole secret. The breaks aren't in nature. They're in the <em>language we wrapped around</em> nature.</p>
+<p>I call this <b>Gradient Analysis</b>, and if you take one thing from this book, let it be this: from the atom to the galaxy, reality is one unbroken continuum, and every line — species, mountain, river, alive, me, not-me — is a label we drew across it so we could speak. The cosmos doesn't come in pieces. We bring the pieces.</p>
+<p>Which is, oddly, the most connected thing imaginable. The edge you thought separated you from the rest of it was always painted on. Not good, not bad — just one continuous thing, briefly telling itself it has parts. Do you get my point?</p>`
+  },
+  control: {
+    label:"Ctrl",
+    body:`<p>Hopefully by now it is clear that adjectives fall onto a gradient, and that different people may have different gradients for these adjectives. This probably wasn't all that surprising because as I said at the beginning of the chapter, I think it is something we all know but just often forget. And thats okay, because like I said, it would be highly impractical to try and align our gradients/definitions every time.</p>
+<p>However, now that we understand adjectives, I want to consider for a second its partner in crime: the noun. I said above that nouns are (<em>usually</em>) binary, and here is where I want to dive into that sneaky "<em>usually</em>". In the example sentence above we said that our two nouns were "fox" and "dog". If we dig into the definitions of these two nouns we will quickly find that neither of them have very precise definitions either.</p>
+<p>With our newfound understanding of nouns/binaries and adjectives/gradients, I want you to think about the concept of evolution. I think its pretty clear to most people that evolution is surely a gradient. While we may have names (nouns) to try and classify these various animals, these names are just attempts at putting lines in the spectrum for the purposes of productive communication (as is all language). As humans we are a "species"; however if you look into the definition of "species" you will see that there is no definite way to define it. Point me to the exact nucleotide along the range of mutations that resulted in the distinction between one species and the other. You can't, and thats okay; I'm simply making the point that evolution is a continuous spectrum and that "species" are just labels someone somewhere came up with to distinguish between animals that are "different enough" from one another.</p>
+<p>I call this framework of thinking <b>Gradient Analysis</b> and if you take one thing away from this book, let it be this. Once you understand Gradient Analysis, you'll see that the world is made up entirely of gradients, and that it is only the result of language that we think of things as binary. Do you get my point?</p>`
+  }
+};
+
+/* ---------- STATE ---------- */
+const R = { ts:new Date().toISOString(), q1:null,q2:null,q3:null,
+  project:null, secondary:null, deliveryScore:null, deliveryLean:null,
+  matchedVersion:null, matchedIsTrueMatch:null, shownOrder:null,
+  pref:null, intensity:null, tell:null, pay:null, freetext:"" };
+
+/* ---------- BUILD UI ---------- */
+function scaleHTML(name){
+  return SCALE.map((t,i)=>`<label data-v="${i+1}"><input type="radio" name="${name}" value="${i+1}"><span>${t}</span></label>`).join("");
+}
+document.querySelectorAll('.scale[data-name]').forEach(s=>{
+  s.innerHTML = scaleHTML(s.dataset.name);
+});
+PROJECTS.forEach((p,i)=>{
+  document.getElementById('proj').insertAdjacentHTML('beforeend',
+    `<label class="opt" data-key="${p.key}">${p.text}</label>`);
+});
+
+/* generic single-select binder */
+function bindOpts(container, cb){
+  container.querySelectorAll('.opt').forEach(o=>{
+    o.onclick=()=>{
+      container.querySelectorAll('.opt').forEach(x=>x.classList.remove('sel'));
+      o.classList.add('sel'); cb(o.dataset.key||o.textContent.trim());
+    };
+  });
+}
+function bindScale(name, cb){
+  document.querySelectorAll(`.scale[data-name="${name}"] label`).forEach(l=>{
+    l.onclick=()=>{
+      l.parentElement.querySelectorAll('label').forEach(x=>x.classList.remove('sel'));
+      l.classList.add('sel');
+      l.querySelector('input').checked=true;
+      cb(+l.dataset.v);
+    };
+  });
+}
+
+/* Step 1 scales */
+bindScale('q1',v=>{R.q1=v; check1();});
+bindScale('q2',v=>{R.q2=v; check1();});
+bindScale('q3',v=>{R.q3=v; check1();});
+function check1(){ document.getElementById('b1').disabled = !(R.q1&&R.q2&&R.q3); }
+
+/* Step 2 project: first pick = dominant, then ask secondary inline */
+let projStage=0;
+bindOpts(document.getElementById('proj'),(key)=>{
+  if(projStage===0){
+    R.project=key; projStage=1;
+    // reveal secondary prompt
+    if(!document.getElementById('secLbl')){
+      document.getElementById('proj').insertAdjacentHTML('afterend',
+        `<p id="secLbl" style="font-weight:bold;margin-top:24px">And your second closest?</p><div id="proj2"></div>`);
+      PROJECTS.forEach(p=>{
+        document.getElementById('proj2').insertAdjacentHTML('beforeend',
+          `<label class="opt" data-key="${p.key}">${p.text}</label>`);
+      });
+      bindOpts(document.getElementById('proj2'),(k2)=>{ R.secondary=k2; document.getElementById('b2').disabled=false; });
+    }
+  }
+});
+
+/* ---------- SCORING ---------- */
+function computeDelivery(){
+  const q2rev = 6 - R.q2;
+  const avg = (R.q1 + q2rev + R.q3)/3;
+  R.deliveryScore = +avg.toFixed(2);
+  // analytical if high NFC (q1) and low transport; narrative if high transport (q3) or low avg
+  if(R.q1>=4 && R.q3<=3) R.deliveryLean="analytical";
+  else if(R.q3>=4 || avg<=2.5) R.deliveryLean="narrative";
+  else R.deliveryLean = (avg>=3.5) ? "analytical":"narrative";
+  return R.deliveryLean;
+}
+
+/* Match logic: true match if project is Status->analytical/A or Creative->narrative/B.
+   Otherwise route by delivery lean and flag as not-a-true-project-match. */
+const PROJECT_VERSION = {
+  Status:"analytical", Creative:"narrative", Community:"community",
+  Biological:"biological", Natural:"natural"
+};
+function chooseVersion(){
+  computeDelivery();
+  // every project now has a hand-written matched variation → always a true match
+  const v = PROJECT_VERSION[R.project] || R.deliveryLean;
+  R.matchedVersion = v;
+  R.matchedIsTrueMatch = !!PROJECT_VERSION[R.project];
+  return v;
+}
+
+/* ---------- SERVE PASSAGES (blind, randomized order, matched vs control) ---------- */
+function serve(){
+  const v = chooseVersion();
+  const matched = VARIATIONS[v];
+  const control = VARIATIONS.control;
+  // randomize which appears first; never reveal which is "matched"
+  const first = Math.random()<0.5 ? {tag:"matched",obj:matched} : {tag:"control",obj:control};
+  const second = first.tag==="matched" ? {tag:"control",obj:control} : {tag:"matched",obj:matched};
+  R.shownOrder = first.tag+","+second.tag;
+
+  const box = document.getElementById('passages');
+  box.innerHTML="";
+  [["Passage 1",first],["Passage 2",second]].forEach(([title,p])=>{
+    box.insertAdjacentHTML('beforeend',
+      `<div class="passage"><h3>${title}</h3><div class="body">${p.obj.body}</div></div>`);
+  });
+
+  // build feedback selectors referencing Passage 1 / Passage 2 (so tester never sees labels)
+  document.getElementById('pref').innerHTML =
+    `<label class="opt" data-key="P1">Passage 1</label>
+     <label class="opt" data-key="P2">Passage 2</label>
+     <label class="opt" data-key="EQ">They felt about the same</label>`;
+  bindOpts(document.getElementById('pref'),k=>{ R.pref=mapPassage(k); check3(); });
+
+  document.getElementById('tell').innerHTML =
+    `<label class="opt" data-key="yes">Yes, clearly</label>
+     <label class="opt" data-key="somewhat">Somewhat</label>
+     <label class="opt" data-key="no">No</label>`;
+  bindOpts(document.getElementById('tell'),k=>{ R.tell=k; check3(); });
+
+  document.getElementById('pay').innerHTML =
+    `<label class="opt" data-key="yes">Yes</label>
+     <label class="opt" data-key="maybe">Maybe</label>
+     <label class="opt" data-key="no">No</label>`;
+  bindOpts(document.getElementById('pay'),k=>{ R.pay=k; check3(); });
+
+  bindScale('intensity',v=>{ R.intensity=v; check3(); });
+  document.getElementById('freetext').oninput=e=>R.freetext=e.target.value;
+
+  go(3);
+}
+/* translate Passage 1/2 choice back into matched-vs-control, given shown order */
+function mapPassage(k){
+  if(k==="EQ") return "equal";
+  const order=R.shownOrder.split(",");
+  if(k==="P1") return order[0];   // "matched" or "control"
+  if(k==="P2") return order[1];
+  return "equal";
+}
+function check3(){
+  document.getElementById('b3').disabled =
+    !(R.pref && R.intensity && R.tell && R.pay);
+}
+
+/* ---------- NAV ---------- */
+const STEPS=["s0","s1","s2","s3","s4"];
+function go(n){
+  document.querySelectorAll('.step').forEach(s=>s.classList.remove('active'));
+  document.getElementById(STEPS[n]).classList.add('active');
+  document.getElementById('bar').style.width = (n/4*100)+"%";
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* ---------- FINISH + EXPORT ---------- */
+function finish(){
+  // persist to localStorage (accumulates multiple responses if same browser)
+  try{
+    const all=JSON.parse(localStorage.getItem('mis_stage0')||"[]");
+    all.push(R); localStorage.setItem('mis_stage0',JSON.stringify(all));
+    document.getElementById('adminhint').textContent =
+      `Responses stored in this browser: ${all.length}. (Admin: open the console or use Download to retrieve.)`;
+  }catch(e){}
+  go(4);
+}
+const COLS=["ts","q1","q2","q3","project","secondary","deliveryScore","deliveryLean",
+  "matchedVersion","matchedIsTrueMatch","shownOrder","pref","intensity","tell","pay","freetext"];
+function toCSV(rows){
+  const esc=s=>`"${String(s??"").replace(/"/g,'""')}"`;
+  return [COLS.join(",")].concat(rows.map(r=>COLS.map(c=>esc(r[c])).join(","))).join("\n");
+}
+function exportCSV(){
+  let rows=[];
+  try{ rows=JSON.parse(localStorage.getItem('mis_stage0')||"[]"); }catch(e){}
+  if(!rows.length) rows=[R];
+  const blob=new Blob([toCSV(rows)],{type:"text/csv"});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob); a.download="mis_stage0_responses.csv"; a.click();
+}
+</script>
+</body>
+</html>

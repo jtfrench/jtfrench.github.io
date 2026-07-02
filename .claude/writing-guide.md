@@ -14,12 +14,12 @@ This book practices **optimistic nihilism** - life is meaningless, but that does
 - Direct address: "you," "we," "I"
 - Self-aware and occasionally self-deprecating
 - Not preachy or prescriptive
+- Be witty but avoid sarcasm
 
 ### Examples from the book:
 - ✅ "I don't have any tattoos, but if I did, it would say this:"
 - ✅ "Don't worry, you don't have to be a physicist to understand the fundamental idea here."
 - ✅ "Maybe you can relate."
-- ✅ "Crazy right?"
 
 ### Intellectual but Accessible
 - Explain complex ideas simply without dumbing them down
@@ -33,11 +33,6 @@ This book practices **optimistic nihilism** - life is meaningless, but that does
 - Open with relatable examples, scenarios, or observations
 - Use specific images: standing at a mountain summit, watching a sunset, forgetting someone's name
 - Build from the specific to the general, not the other way around
-
-### Use Horizontal Rules for Major Shifts
-- `---` to separate major tonal or topical transitions
-- Signals "okay, we're shifting gears now"
-- Example: Between the philosophical opening of Chapter 1 and the Wikipedia example
 
 ### Cross-Reference Other Chapters
 - Link to related concepts: `[The Status Project](/08-the-status-project/)`

@@ -22,17 +22,15 @@ Just because they understand *why* we want to procreate, socialize, or protect o
 
 Okay, so you're willing to open yourself up to maybe some uncomfortable ideas? Amazing.
 
-# You're a monkey
+## You're a monkey
 
----
+More specifically, you're a monkey in shoes. Also probably some clothes. Likely a house, maybe a car, and probably a smartphone. But you're still a monkey. 
 
-More specificaly, you're a monkey in shoes. Also probably some clothes. Likely a house, maybe a car, and probably a smartphone. But you're still a monkey. 
+Don't think so? **Your DNA is 99% the same as a Chimpanzee or Bonobo.** 
 
-Dont think so? **Your DNA is 99% the same as a Chimpanzee or Bonobo.** 
+When two things are 99% similar, you basically consider them the same thing. But in this case, we humans don't tend to think of ourselves the same as a monkey. Those monkeys feel so primitive and unsophisticated, so "lesser than" intellectually. 
 
-When two things are 99% similar, you basically consider them the same thing. But in this case, we humans dont tend to think of ourselves the same as a monkey. Those monkeys feel so primitive and unsophisticated, so "lesser than" intellectually. 
-
-Yah, well, the numbers dont lie. Time to face the facts and realize that if you want to understand yourself, you better start understanding those damn monkeys. 
+Yah, well, the numbers don't lie. Time to face the facts and realize that if you want to understand yourself, you better start understanding those damn monkeys. 
 
 Remember, just because you understand something doesn't mean the magic will go away.
 

@@ -14,7 +14,7 @@ I don't have any tattoos, but if I did, it would say this:
 
 You'll find that I try my best in this book not to make value judgments. What I mean by that is I try not to label anything as good, bad, better, or worse. Why? Well, put simply, I don't think there is any good, bad, better, or worse way to live one's life. I consider myself an optimistic nihilist, which means that I think life is meaningless, but I also don't want to die. I figure even if it's shitty, living and experiencing is better than not. I'm not afraid of death, it just seems boring. How do I know that? Well I've been there, back before I was born, and trust me it was not very exciting. Maybe you can relate. 
 
-# The Why Game
+## The Why Game
 
 In 2011, a fellow by the name of [Jeffery Winter discovered](https://xefer.com/2011/05/wikipedia?utm_source=chatgpt.com) that if you repeatedly click the first link on any Wikipedia page, 97% of the time you will end up at the page for "Philosophy". Wikipedia articles are generally structured in a way where the first sentence in the article is the most general description of the page in question, and often the first hyperlink in that sentence is for whatever broader category the page fits in. By continually following the first link you are really asking *what* something is at a higher-level, almost like continually zooming out to broader and broader levels of detail.
 
