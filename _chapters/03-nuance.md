@@ -4,6 +4,8 @@ title: "Nuance"
 chapter: 3
 ---
 
+<!-- analogy | concept: arguments persist because people ignore nuance and argue from mismatched definitions | assumes: recognizing Tim Minchin | type: swappable | slot: epigraph-authority -->
+
 > *"Most of society's arguments are kept alive by a failure to acknowledge **nuance**. We tend to generate false dichotomies, then try to argue one point using two entirely different sets of assumptions, like two tennis players trying to win a match by hitting beautifully executed shots from either end of separate tennis courts." - Tim Minchin*
 
 **nuance**

@@ -4,6 +4,8 @@ title: "Experiential Transcendence"
 chapter: 12
 ---
 
+<!-- analogy | concept: experiential transcendence — a psychic state so intense that time and death drop away | assumes: recognizing Robert Jay Lifton | type: swappable | slot: epigraph-authority -->
+
 > *"The fifth mode of symbolized immortality, that of experiential transcendence, is of a different order from the others. It depends entirely on a psychic state - one so intense and all-encompassing that time and death disappear."*
 > *- Robert Jay Lifton, The Broken Connection*
 

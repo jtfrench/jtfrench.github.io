@@ -4,12 +4,16 @@ title: "Don't Try Too Hard"
 chapter: 13
 ---
 
+<!-- analogy | concept: life is meaningless, and the sane response is to fill it anyway | assumes: recognizing Tim Minchin | type: swappable | slot: epigraph-authority -->
+
 > *"I said at the beginning of this ramble that life is meaningless - it was not a flippant assertion. I think it's absurd, the idea of seeking meaning in the set of circumstances that happens to exist after 13.8 billion years worth of unguided events. Leave it to humans to think the universe has a purpose for them. However I am no nihilist, I am not even a cynic. I am actually rather romantic, and here's my idea of romance: you will soon be dead. Life may sometimes seem long and tough and god it's tiring; you will sometimes be happy and sometimes sad and then you'll be old and then you'll be dead. There is only one sensible thing to do with this empty existence and that is: fill it.*
 > *- Tim Minchin*
 
 The one thing that drives me nuts about Buddhism is the fatal flaw in their idea of the pinnacle of their practice: enlightenment. For those of you who don't know, enlightenment is like winning the game of Buddhism. It's revered much like the Christian designation of making it to heaven, except you get to achieve it while you are alive.
 
 In few words, enlightenment is this state of "oneness" with the world where you seemingly have no opinion on the events around you. Enlightened folks are not *attached to* anything that they experience. That's a careful choice of words, *attached to*. It's not to say they aren't emotionally impacted, I reckon an enlightened person would still argue that they feel happiness and sadness, but the difference is that they recognize it as just a fleeting emotional state. This constant, 24/7, "recognizing" is this sort of higher layer of day-to-day experience. In other words you could say they are not fazed by anything.
+
+<!-- analogy | concept: the supposed ideal of enlightened non-attachment, embodied by a famous "do or do not" figure — an ideal the chapter argues is a false binary | assumes: knowing Yoda / Star Wars | type: decorative | fallback: any culturally-resonant embodiment of serene detachment, or drop the figure and state the "do or do not" ideal abstractly -->
 
 The best example of a person who seems to demonstrate enlightenment is, well, not a person. Best summed up by their famous quote:
 
@@ -37,6 +41,8 @@ Well the answer is: exactly as much as you currently do.
 In other words, I am not telling you to change anything, I'm just telling you how to think about it differently.
 
 You see human behaviour is really just one big weighted sum leading to action potential. We know this because it's how the neurons in our brain function, but it also makes a lot of intuitive sense.
+
+<!-- analogy | concept: behavior is a weighted sum that crosses a threshold into action | assumes: comfort with light math and neuroscience/engineering vocabulary (the pee/comfy example itself is universal; the "transistors and neural networks" name-drop is the part that may not land) | type: swappable | fallback: keep the pee/comfy weighted sum; drop or swap the transistor/neural-network reference -->
 
 An action potential, in its most basic sense, is the idea that a small input can lead to a large output. It's also the basic idea behind transistors and neural networks.
 

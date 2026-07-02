@@ -4,6 +4,8 @@ title: "The Immortal Replicator"
 chapter: 5
 ---
 
+<!-- analogy | concept: the only thing that must exist for life is the immortal replicator, not any individual body | assumes: recognizing Richard Dawkins / The Selfish Gene | type: swappable | slot: epigraph-authority -->
+
 > *"But the individual body, so familiar to us on our planet, did not have to exist. The only kind of entity that has to exist in order for life to arise, anywhere in the universe, is the immortal replicator."*
 > *- Richard Dawkins, The Selfish Gene: 40th Anniversary edition (Oxford Landmark Science)*
 
@@ -14,6 +16,8 @@ There is a question that when asked to all people, across all cultures, across a
 Now spare yourself the vivid imagery of a scene in a horror film, and instead just for a moment, think about it genuinely. If this were a question in some sort of routine mental health questionnaire we would view it pragmatically; but all of us would have the same answer. But wait you say, that's not true - what about suicide? Some people seemingly answer "yes" through their tragic actions. I'll address that in a moment, but for now lets talk about the vast majority of people who would commonly answer "no".
 
 Can you think of any other question to which every person, and every mammal for that matter, across all of time would have the same answer to? I don't think there is one, and I think this fact is extremely meaningful. There is almost nothing that we humans agree on besides this question, and this answer. That's a big damn deal. If this answer is the one thing that is common across all of us, that unifies us, then maybe within it holds the key to understanding ourselves.
+
+<!-- analogy | concept: even traits we call "universal" fracture into mere majorities once you look closely — only "not wanting to die" has no exceptions | assumes: reading balut / fermented shark / cilantro-soap as unusual (what's exotic to one reader is dinner to another) | type: swappable | fallback: swap in foods and tastes that read as unusual to the specific reader -->
 
 And I really do mean *the only thing*. Think about how much variation hides inside the stuff we assume is shared. Take food - everybody eats, sure, but get specific and the agreement falls apart fast. Some people will happily put away fermented shark, or balut, or a fistful of raw chillies; others can't go near cilantro because a quirk in their genes makes it taste like soap. Sleep is the same story. Most people sleep at night, but plenty are wired as night owls, some chop it into two shifts, some live by an afternoon nap while others are wrecked by one. Music, humour, love, what counts as beautiful - all of it splinters the second you zoom in. Damn near every "universal" human trait turns out, on closer inspection, to be a strong majority at best. The one and only exception - no asterisk, no cultural carve-out, no weird minority who genuinely feels the opposite - is the desire to keep living.
 

@@ -4,6 +4,8 @@ title: "The Theory of Relativity"
 chapter: 4
 ---
 
+<!-- analogy | concept: we crave a binary world even though reality isn't binary | assumes: recognizing Tim Minchin | type: swappable | slot: epigraph-authority -->
+
 > *We divide the world to stop us feeling frightened*<br>
 > *Into wrong and into right and*<br>
 > *Into black and into white and*<br>
@@ -13,9 +15,13 @@ chapter: 4
 > *But it's not that simple*<br>
 > *- [Tim Minchin, The Fence](https://www.youtube.com/watch?v=ylWkW8BqLfY)*
 
+<!-- analogy | concept: something that feels fixed (time) turns out to be relative — a mathematical cousin of Gradient Analysis | assumes: pop-science familiarity with Einstein and relativity | type: load-bearing | fallback: any everyday quantity that seems absolute but shifts with your frame of reference -->
+
 In 1905/1915, Einstein shocked the world with his newly formulated "Theory of Relativity". Don't worry, you don't have to be a physicist to understand the fundamental idea here. Now that you have an understanding of Gradient Analysis (from [Nuance](/03-nuance/)) you'll quickly see that his theory was really just a more mathematical version of Gradient Analysis. Basically what he proposed was that time, something that appears so fixed to us, was in fact relative (surprise! another gradient!). It showed that if you sent someone out into space and they moved really really fast for a while and then returned to earth, they would have actually *experienced less time* than had passed here on earth. Crazy right?
 
 ## Dimensions of Experience
+
+<!-- analogy | concept: an emotion can be plotted over time like any changing quantity | assumes: comfort reading line graphs | type: swappable | fallback: describe the rise and fall in words, no graph -->
 
 For the remainder of this chapter we are going to be talking about experiences as *dimensions*. Don't worry, this won't get into complex algebra; if you can understand the basic idea behind the graph of a stock or temperature changes over time then you'll be totally fine. Like these examples, our graphs will have time on the horizontal axis moving from left to right as time passes. The difference will be on the vertical axis; while the examples have stock price and temperature on the vertical, we will be using *emotions*. If this seems inconceivable, then go back and read [Nuance](/03-nuance/). Short version: emotions are adjectives which means they can best be understood as a gradient and the beautiful thing about gradients is that they look really damn good on a graph axis as a dimension. Einstein would be proud.
 
@@ -32,6 +38,8 @@ It is for this reason that we need to classify these dimensions of emotion as *d
 This is important because in the following examples we will be focusing on the pleasure/pain dimension only because it is the most broad and simple to follow, but its worth remembering that a host of other emotions are synonymous with this dimension. Look no further than the example above: "happy" is synonymous with "pleasure" and "unhappy" is synonymous with "pain". It's all related because, well (I'm going to say it again), everything is a gradient.
 
 ## Upper & Lower Bounds of Experience
+
+<!-- analogy | concept: your comparison point (the upper/lower bound) resets over time, faster for some experiences than others | assumes: the hangover example assumes the reader drinks alcohol | type: swappable | fallback: swap alcohol for any recurring craving-then-relief cycle the reader knows — caffeine, sugar, doomscrolling, intense exercise -->
 
 With our understanding of emotional dimensions at hand, let's consider the following scenarios:
 - When you go a while without eating tasty food, and then something that you may have previously considered bland all of a sudden tastes amazing.

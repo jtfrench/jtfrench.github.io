@@ -4,6 +4,8 @@ title: "The Biological Project"
 chapter: 7
 ---
 
+<!-- analogy | concept: biological immortality — living on through one's descendants | assumes: recognizing Robert Jay Lifton | type: swappable | slot: epigraph-authority -->
+
 > *"The biological mode of immortality is epitomized by family continuity, living on through - psychologically speaking, in-one's sons and daughters and their sons and daughters, with imagery of an endless chain of biological attachment. This has been the most fundamental and universal of all modes."*
 > *- Robert Jay Lifton, The Broken Connection*
 

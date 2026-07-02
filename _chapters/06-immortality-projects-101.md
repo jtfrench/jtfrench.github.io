@@ -4,6 +4,8 @@ title: "Immortality Projects 101"
 chapter: 6
 ---
 
+<!-- analogy | concept: humans are the one animal that knows it will die | assumes: recognizing Oswald Spengler | type: swappable | slot: epigraph-authority -->
+
 > *"Man is the only being that knows death; all others become old, but with a consciousness wholly limited to the moment which must seem to them eternal" - Oswald Spengler*
 
 I've never been a fan of absolute statements about life like "The four paths to enlightenment" or "the Ten Commandments". The idea that something as complicated as achieving enlightenment or understanding how to act could be distilled down into a finite set of exact statements is ridiculous. Unfortunately, as we explored in the previous chapter, we humans like finite things. We like pattern and structure and if you don't think about it too hard you can sometimes take comfort in these sort of simplistic exact statements about the world.
@@ -11,6 +13,8 @@ I've never been a fan of absolute statements about life like "The four paths to 
 The reason I try to make this point is because I would like to use one of these such numerically absolute statements, but with the caveat that I recognize from the outset that it is not a complete or exact list by any means. Think of it as a convenient way of organizing an idea in your head. When you undoubtedly think of contradiction, just know that I understand; you are not wrong, and yes we probably missed something, and maybe it's a combination of two or more of the items on this list, but no need to worry because we recognize it's flawed - it's just a place to start.
 
 Before we get to the framework itself, it's worth pausing on just how deep the death awareness rabbit hole goes — because it's deeper than most people realize.
+
+<!-- analogy | concept: reminding people of death measurably shifts their behavior — harsher, more tribal, more legacy-seeking | assumes: willingness to trust a cited psychology study (explained in-text, so low risk) | type: load-bearing | fallback: keep the finding; may add a second example closer to the reader's world -->
 
 Three psychologists — Sheldon Solomon, Jeff Greenberg, and Tom Pyszczynski — spent the better part of their careers studying what happens when you remind people that they're going to die. Their work, which they eventually compiled in a book called *The Worm at the Core*, produced hundreds of experiments under the banner of Terror Management Theory. The results are, honestly, kind of unsettling.
 
@@ -48,9 +52,13 @@ Everyone has a pie chart, whether they realize it or not. When we enter this wor
 
 ![Biological pie chart](/assets/images/Image 9.jpg)
 
+<!-- analogy | concept: kids' motivations start out entirely biological before diversifying | assumes: "Grade 1" is North American schooling terminology | type: swappable | fallback: "around age six," or the reader's local equivalent (Year 1 / Primary 1) -->
+
 It basically doesn't change from this for at least the first 5 years of our lives. Even our early Grade 1 crushes fit into the project. At around this age, children may begin to be introduced to religion (community), art (creative), and/or sport (status); their pie chart may begin to diversify.
 
 ![Diversified pie chart](/assets/images/Image 10.jpg)
+
+<!-- analogy | concept: one activity can blend several Immortality Projects at once (sport = Status + Creative + Biological) | assumes: interest in and knowledge of professional sport | type: swappable | fallback: any multi-project pursuit the reader knows — music, gaming, academia, cooking -->
 
 Every child has different experiences and therefore their pie charts may look vastly different. If your family is not religious then you probably wouldn't have as large of, if any, a community project. Same goes for if you are not exposed to art or sport. Pie charts can change very quickly; for example, it's common for kids to become obsessed with a sport. I believe professional sport is encompassed by two primary projects and one secondary. The primary ones are Status and Creative, and the secondary is Biological. While many athletes would struggle to admit it, the social status lift (fame) that comes from being good at a sport is highly motivating and is a large reason that people play sports. Once again, I am not saying this is a bad thing. We have a tendency to look down on people who openly admit their desire for fame. We love the humble superstar and cringe at the boastful bragger. However we have to remember that it really doesn't matter, projects are "*not good, not bad, not better, not worse, just is*". The other primary project for sport is Creative, and this is the one that encompasses the "love for the game". This is the part of sport that encompasses the love of the challenge. One can make the argument that "sport is an art"; the best players look like artists in the way they run/kick/shoot.
 

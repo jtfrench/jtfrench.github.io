@@ -16,6 +16,8 @@ You'll find that I try my best in this book not to make value judgments. What I 
 
 ## The Why Game
 
+<!-- analogy | concept: repeatedly asking "what is this?" converges on one foundational idea — a warm-up for the Why Game doing the same with "why" | assumes: familiarity with Wikipedia and clicking links online | type: load-bearing | fallback: chasing a word's definition through the definitions of its own words, which never bottoms out -->
+
 In 2011, a fellow by the name of [Jeffery Winter discovered](https://xefer.com/2011/05/wikipedia?utm_source=chatgpt.com) that if you repeatedly click the first link on any Wikipedia page, 97% of the time you will end up at the page for "Philosophy". Wikipedia articles are generally structured in a way where the first sentence in the article is the most general description of the page in question, and often the first hyperlink in that sentence is for whatever broader category the page fits in. By continually following the first link you are really asking *what* something is at a higher-level, almost like continually zooming out to broader and broader levels of detail.
 
 ![Wikipedia paths to Philosophy](/assets/images/Geography.png)

@@ -10,6 +10,8 @@ These are causes/symbols that are bigger than oneself and that will continue on 
 
 ## Religion
 
+<!-- analogy | concept: if disbelief risks eternal suffering, believing becomes the "safe" bet — which adds to religion's pull | assumes: knowing Pascal's wager | type: decorative | fallback: state it plainly — "you might as well believe, just in case" — without naming Pascal -->
+
 In the case of some religions there is an added immortality benefit of, well, immortality. Many popular religions claim to offer some form of life after death. This component of religion leverages much of the same motivations behind [The Biological Project](/07-the-biological-project/) - that is, the mammalian desire not to die. Furthermore, some religions like Christianity claim suffering in the afterlife for those who are not followers. This attempt to relate familiar physical suffering with a religious decision adds an extra layer of compellingness; as [Pascal's wager](https://en.wikipedia.org/wiki/Pascal%27s_wager) showed, [you might as well believe](https://youtu.be/H_JoE2GioXY?si=--PRs4_INehQ8MAZ).
 
 I believe this two-for-one special of communal immortality (The Community Project) and semi-biological immortality/suffering avoidance ([The Biological Project](/07-the-biological-project/)) is what makes religion so compelling. The latter is more self-explanatory: avoidance of biological pain. The former however is much more nuanced and is the component of religion that relates to all the other forms of Community Projects.
@@ -19,6 +21,8 @@ I believe this two-for-one special of communal immortality (The Community Projec
 Putting the Biological component aside, the roots of the Community Project comes from a sense of group immortality. These groups/communities are their own life-form that extends beyond the individuals that comprise them. More importantly, these communities do not have a foreseeable expiration date. They are purely conceptual in nature, and because they exist as concepts we can associate with them whatever abstract traits we like.
 
 ### Sports Teams
+
+<!-- analogy | concept: joining a group grants a borrowed immortality — the group outlives any member | assumes: sports fandom | type: swappable | fallback: any group the reader belongs to — a fandom, religion, alma mater, online community -->
 
 Being a fan of a particular sports team is the simplest form of a Community Project, as it largely consists of simple "support". By support we mean cheering when the team is successful (win, score, etc.) and maybe wearing the team's colors on your clothes. Sure, there are levels to fandom, but the bar for entry is pretty low. Go to a foreign city, put on the local team's jersey, and you're in.
 

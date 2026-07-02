@@ -4,6 +4,8 @@ title: "The Creative Project"
 chapter: 9
 ---
 
+<!-- analogy | concept: creative immortality — work that outlives its maker | assumes: recognizing Robert Jay Lifton | type: swappable | slot: epigraph-authority -->
+
 > *"The third mode of symbolic immortality is the creative - whether through great works of art, literature, or science, or through more humble influences on people around us. The artist has long been recognized as participating in this mode of immortality - either in his prophetic function or, as Malraux believed, through "the continuity of artistic creation" by means of which "not the individual, but man, human continuity, reveals itself," so that "more than any other activity, art escapes death."*
 > *- Robert Jay Lifton, The Broken Connection*
 

@@ -4,7 +4,11 @@ title: "The Natural Project"
 chapter: 11
 ---
 
+<!-- analogy | concept: natural immortality — the environment endures beyond us | assumes: recognizing Robert Jay Lifton | type: swappable | slot: epigraph-authority -->
+
 > *"The fourth mode of symbolic immortality is that associated with nature itself: the perception that the natural environment around us, limitless in space and time, will remain." - Robert Jay Lifton, The Broken Connection*
+
+<!-- analogy | concept: standing before something that vastly predates and outlasts you gives a comforting, not diminishing, smallness | assumes: access to / experience of mountains and hiking | type: swappable | fallback: any nature the reader can reach — ocean, desert, prairie, night sky -->
 
 You hike for four hours, your legs are done, and you finally get to the top. You look out at a valley that was already sitting there a million years before your grandparents' grandparents existed and will still be sitting there long after everyone you know is gone. And weirdly, that doesn't make you feel worse. It makes you feel *good*. Small, sure - but a comfortable kind of small, the kind where you're part of something instead of alone against it.
 

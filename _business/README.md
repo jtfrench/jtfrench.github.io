@@ -60,6 +60,7 @@ Two tiers. **Strategy docs** (top level) are durable reference. **Working artifa
 | [tasks.md](tasks.md) | **Start here.** The sequenced plan. |
 | [personalization-framework.md](personalization-framework.md) | What dimensions of a person change the output, and how |
 | [content-architecture.md](content-architecture.md) | Fixed vs. variable content, modular structure |
+| [analogy-tags.md](analogy-tags.md) | The in-source tag convention that marks swappable analogies inside the chapter files (implements content-architecture Layers 3–4) |
 | [technical-stack.md](technical-stack.md) | Generation pipeline, instrumentation, delivery infrastructure |
 | [business-model.md](business-model.md) | Pricing, funnel, distribution, go-to-market |
 

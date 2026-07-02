@@ -30,7 +30,7 @@ The sequence in which ideas are introduced can vary based on the person's domina
 
 ### Layer 3: Variable Examples (Swappable)
 
-This is the highest-leverage personalization layer. The same concept illustrated through different stories, analogies, and references.
+This is the highest-leverage personalization layer. The same concept illustrated through different stories, analogies, and references. These swappable spots are marked directly in the chapter files with **analogy tags** — see [analogy-tags.md](analogy-tags.md) for the tag schema and how the pipeline consumes them.
 
 **How these get produced:** The examples below are *direction*, not pre-written copy. Per the hybrid approach in [technical-stack.md](technical-stack.md), we write a few hand-crafted reference variations (to nail voice and quality) and then use those as few-shot examples for AI generation of additional profiles. The goal is to have 2-3 human-written variations per concept as anchors, with AI filling the gaps for profiles that fall between them.
 
